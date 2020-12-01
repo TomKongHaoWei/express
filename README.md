@@ -12,7 +12,7 @@ http://localhost:3004   (可在 bin ==> www 文件内修改)
 ### 例子：
 $.ajax({
    type: "GET",
-   url: "http://192.168.67.140:3004/birds/class",
+   url: "http://localhost:3004/birds/class",
    success: function (res) {
       console.log(res);
    },
