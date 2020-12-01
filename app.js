@@ -6,7 +6,6 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var birdsRouter = require('./routes/birds');
 
 var app = express();
 
@@ -31,7 +30,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/birds', birdsRouter);
 
 // 捕获404并转发给错误处理程序
 app.use(function(req, res, next) {
