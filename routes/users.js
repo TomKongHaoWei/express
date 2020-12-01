@@ -25,9 +25,9 @@ router.get('/', function(req, res, next) {
 
 // 定义users路线
 router.get('/test', function(req, res, next) {
-  console.log(111111111111);
-  console.log(req, res, next);
-  console.log(22222222222222);
+  // console.log(111111111111);
+  // console.log(req, res, next);
+  // console.log(22222222222222);
   res.send('respond1 with a resource');
 });
 
