@@ -4,12 +4,10 @@
 	<meta charset="UTF-8">
 	<script src="./jq.js"></script>
 </head>
-<style>
-</style>
 <body>
 </body>
 <script type="text/javascript">
-var url = "http://192.168.67.140:3004"; // 也可以是http://localhost:3004/
+var url = "http://localhost:3004"; // 也可以是本地IP + 3004
 $.ajax({
    type: "GET",
    url: url + "/users",
@@ -34,5 +32,17 @@ $.ajax({
       console.log(err);
    },
 });
+
+// $.ajax({
+//    type: "GET",
+//    url: "https://www.easy-mock.com/mock/5fc6084282ad4d43e5fd515e/test1/users",
+//    success: function (res) {
+//       console.log(res);
+//    },
+//    error: function (err) {
+//       console.log(err);
+//    },
+// });
+
 </script>
 </html>
